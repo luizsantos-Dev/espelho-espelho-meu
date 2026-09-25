@@ -1,9 +1,9 @@
 [
   {
     "id": 1,
-    "user": "ana.dev",
+    "user": "gabi.dev",
     "location": "São Paulo, Brasil",
-    "avatar": "/images/avatars/ana.jpg",
+    "avatar": "/images/avatars/corredor.jpeg",
     "image": "/images/posts/post-1.jpg",
     "alt": "Mesa de trabalho com notebook e café",
     "likes": 128,
@@ -28,5 +28,15 @@
     "alt": "Xícara de café ao lado de um teclado",
     "likes": 87,
     "caption": "Qual é a sua trilha sonora para programar?"
+  },
+  {
+    "id": 4,
+    "user": "luiz.fodinha",
+    "location": "Canadá, EUA",
+    "avatar": "/images/avatars/cafe.jpg",
+    "image": "/images/posts/post-3.jpg",
+    "alt": "Xícara de café ao lado de um teclado.",
+    "likes": 87,
+    "caption": "Como você chama quem ama?"
   }
 ]

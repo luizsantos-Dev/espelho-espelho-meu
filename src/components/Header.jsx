@@ -5,6 +5,7 @@ function Header() {
     <header className="header">
       <span className="header__logo">Instagram</span>
       <nav className="header__actions" aria-label="Navegação principal">
+        
         <button className="icon-button" type="button" aria-label="Início">
           <FiHome />
         </button>
