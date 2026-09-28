@@ -1,6 +1,12 @@
+import { useState } from 'react'
 import { FiBookmark, FiHeart, FiMessageCircle, FiMoreHorizontal, FiSend } from 'react-icons/fi'
 
 function Post({ post }) {
+
+
+  //criamos uma variavel e uma função e atribuimos valor falso;
+    const [liked, setLiked] = useState(false)
+    const [commented, setCommentend] = useState(false)
   return (
     <article className="post">
       <header className="post__header">
@@ -15,10 +21,20 @@ function Post({ post }) {
       <img className="post__image" src={post.image} alt={post.alt} />
       <div className="post__content">
         <div className="post__actions">
-          <button className="icon-button" type="button" aria-label="Curtir">
+          <button 
+          className="icon-button" 
+          type="button"
+           aria-label="Curtir"
+           onClick={() => setLiked(!liked)}
+           style={{ color: liked ? 'red' : undefined}}>
             <FiHeart />
           </button>
-          <button className="icon-button" type="button" aria-label="Comentar">
+          <button
+           className="icon-button" 
+           type="button"
+            aria-label="Comentar"
+             onClick={() => setCommentend(!commented)}
+           style={{ color: commented ? 'green' : undefined}}>
             <FiMessageCircle />
           </button>
           <button className="icon-button" type="button" aria-label="Enviar">
