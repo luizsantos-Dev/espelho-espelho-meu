@@ -1,8 +1,8 @@
 # Imagens do projeto
 
-Adicione imagens mantendo os caminhos definidos em `src/data/posts.json`:
+Todas as imagens são ilustrações SVG feitas para o Dinogram.
 
-- `avatars/ana.jpg`, `avatars/viajante.jpg` e `avatars/cafe.jpg`
-- `posts/post-1.jpg`, `posts/post-2.jpg` e `posts/post-3.jpg`
+- `avatars/`: rex.svg, tri.svg, ptero.svg e estego.svg
+- `posts/`: rex-abraco.svg, tri-chapeu.svg, ptero-mar.svg e estego-meteoro.svg
 
-Você pode mudar os caminhos e textos alternativos no JSON.
+Os caminhos e os textos alternativos ficam em `src/data/posts.json`.

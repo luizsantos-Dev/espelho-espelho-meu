@@ -4,11 +4,28 @@
 
 body {
     margin: 0;
-    background: #fafafa;
-    color: #262626;
-    font-family: Arial, Helvetica, sans-serif;
+    background: #F4F9EC;
+    color: #22311F;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
-button {
+button,
+input {
     font: inherit;
+}
+
+/* esconde da tela, mas o leitor de tela ainda lê */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+}
+
+button:focus-visible,
+input:focus-visible {
+    outline: 3px solid #F28C28;
+    outline-offset: 2px;
 }

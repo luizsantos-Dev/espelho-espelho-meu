@@ -1,42 +1,54 @@
 [
   {
     "id": 1,
-    "user": "gabi.dev",
-    "location": "São Paulo, Brasil",
-    "avatar": "/images/avatars/corredor.jpeg",
-    "image": "/images/posts/post-1.jpg",
-    "alt": "Mesa de trabalho com notebook e café",
-    "likes": 128,
-    "caption": "Construindo uma interface por vez. ✨"
+    "user": "rex.bracinhos",
+    "location": "Montana, Cretáceo",
+    "avatar": "/images/avatars/rex.svg",
+    "image": "/images/posts/rex-abraco.svg",
+    "alt": "Tiranossauro com braços compridos esticados até um coração",
+    "likes": 1280,
+    "caption": "O que eu mais queria ver: meus bracinhos alcançando um abraço. 🦖❤️",
+    "comments": [
+      { "user": "tri.chifrudo", "text": "Vem cá que eu te abraço!" },
+      { "user": "ptero.voa", "text": "Chorei 😭" }
+    ]
   },
   {
     "id": 2,
-    "user": "viajante",
-    "location": "Rio de Janeiro, Brasil",
-    "avatar": "/images/avatars/viajante.jpg",
-    "image": "/images/posts/post-2.jpg",
-    "alt": "Paisagem de uma praia ao entardecer",
+    "user": "tri.chifrudo",
+    "location": "Dakota do Sul, Cretáceo",
+    "avatar": "/images/avatars/tri.svg",
+    "image": "/images/posts/tri-chapeu.svg",
+    "alt": "Vitrine com um chapéu vermelho de três furos",
     "likes": 342,
-    "caption": "Fim de tarde com vista para o mar."
+    "caption": "Achei! Um chapéu com furo para os três chifres. 🎩",
+    "comments": [
+      { "user": "estego.zen", "text": "Tem para placas nas costas?" }
+    ]
   },
   {
     "id": 3,
-    "user": "cafecomcodigo",
-    "location": "Curitiba, Brasil",
-    "avatar": "/images/avatars/cafe.jpg",
-    "image": "/images/posts/post-3.jpg",
-    "alt": "Xícara de café ao lado de um teclado",
-    "likes": 87,
-    "caption": "Qual é a sua trilha sonora para programar?"
+    "user": "ptero.voa",
+    "location": "Litoral, Jurássico",
+    "avatar": "/images/avatars/ptero.svg",
+    "image": "/images/posts/ptero-mar.svg",
+    "alt": "Pterodáctilo voando sobre o mar no pôr do sol",
+    "likes": 876,
+    "caption": "Ver o mar lá de cima, sem ninguém me pedindo carona.",
+    "comments": []
   },
   {
     "id": 4,
-    "user": "luiz.fodinha",
-    "location": "Canadá, EUA",
-    "avatar": "/images/avatars/cafe.jpg",
-    "image": "/images/posts/post-3.jpg",
-    "alt": "Xícara de café ao lado de um teclado.",
-    "likes": 87,
-    "caption": "Como você chama quem ama?"
+    "user": "estego.zen",
+    "location": "Colorado, Jurássico",
+    "avatar": "/images/avatars/estego.svg",
+    "image": "/images/posts/estego-meteoro.svg",
+    "alt": "Meteoro passando longe da Terra e um estegossauro aliviado",
+    "likes": 66000000,
+    "caption": "Meu sonho: ver o meteoro passar longe. ☄️",
+    "comments": [
+      { "user": "rex.bracinhos", "text": "Amém!" },
+      { "user": "tri.chifrudo", "text": "Todo mundo torcendo 🙏" }
+    ]
   }
 ]

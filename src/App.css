@@ -1,19 +1,110 @@
+/* Cores do Dinogram */
+:root {
+    --verde: #4C956C;
+    --verde-escuro: #2C6E49;
+    --laranja: #F28C28;
+    --borda: #D6E5C8;
+    --cinza: #6B7A66;
+}
+
 .app {
     min-height: 100vh;
     padding-bottom: 32px;
 }
 
+/* ---------- Cabeçalho ---------- */
+.header {
+    height: 60px;
+    border-bottom: 3px solid var(--verde);
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 max(20px, calc((100vw - 935px) / 2));
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.header__logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--verde-escuro);
+}
+
+.header__actions {
+    display: flex;
+    gap: 14px;
+}
+
+.icon-button {
+    border: 0;
+    background: transparent;
+    padding: 4px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #22311F;
+    display: grid;
+    place-items: center;
+}
+
+.icon-button:hover {
+    color: var(--verde);
+}
+
+.curtido,
+.curtido:hover {
+    color: #E63946;
+}
+
+/* ---------- Feed ---------- */
 .feed {
     width: min(100%, 470px);
-    margin: 32px auto;
+    margin: 24px auto;
     display: grid;
     gap: 24px;
 }
 
+/* ---------- Stories ---------- */
+.stories {
+    display: flex;
+    gap: 14px;
+    overflow-x: auto;
+    padding: 14px;
+    background: #fff;
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+}
+
+.story {
+    border: 0;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    display: grid;
+    justify-items: center;
+    gap: 4px;
+    font-size: 12px;
+    color: #22311F;
+}
+
+.story img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    padding: 2px;
+    border: 3px solid var(--laranja);
+}
+
+.story--visto img {
+    border-color: #ccc;
+}
+
+/* ---------- Post ---------- */
 .post {
     background: #fff;
-    border: 1px solid #dbdbdb;
-    border-radius: 8px;
+    border: 1px solid var(--borda);
+    border-radius: 12px;
     overflow: hidden;
 }
 
@@ -25,11 +116,9 @@
 }
 
 .post__avatar {
-    width: 36px;
-    height: 36px;
-    object-fit: cover;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    background: #efefef;
 }
 
 .post__user {
@@ -42,7 +131,7 @@
 }
 
 .post__user span {
-    color: #737373;
+    color: var(--cinza);
     font-size: 12px;
 }
 
@@ -50,27 +139,11 @@
     margin-left: auto;
 }
 
-.icon-button {
-    border: 0;
-    background: transparent;
-    padding: 4px;
-    cursor: pointer;
-    font-size: 24px;
-    color: #262626;
-    display: grid;
-    place-items: center;
-}
-
-.icon-button:hover {
-    opacity: .55;
-}
-
 .post__image {
     display: block;
     width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
-    background: #efefef;
 }
 
 .post__content {
@@ -91,47 +164,94 @@
     margin-left: auto;
 }
 
-.post__likes {
+.post__likes,
+.post__caption {
     margin: 0 0 8px;
     font-size: 14px;
 }
 
-.post__caption {
-    margin: 0;
-    font-size: 14px;
-    line-height: 1.45;
-}
-
-.post__caption strong {
+.post__caption strong,
+.post__comments strong {
     margin-right: 5px;
 }
 
-.header {
-    height: 60px;
-    border-bottom: 1px solid #dbdbdb;
-    background: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 max(20px, calc((100vw - 935px) / 2));
-    position: sticky;
-    top: 0;
-    z-index: 1;
+.post__comments {
+    list-style: none;
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 14px;
+    display: grid;
+    gap: 4px;
 }
 
-.header__logo {
-    font-family: 'Brush Script MT', cursive;
-    font-size: 29px;
+.post__form {
+    display: flex;
+    gap: 8px;
+    border-top: 1px solid var(--borda);
+    padding-top: 10px;
+}
+
+.post__form input {
+    flex: 1;
+    border: 0;
+    padding: 6px 0;
+}
+
+.post__form button {
+    border: 0;
+    background: none;
+    color: var(--verde-escuro);
     font-weight: 700;
+    cursor: pointer;
 }
 
-.header__actions {
-    display: flex;
-    gap: 14px;
+.post__form button:disabled {
+    opacity: .4;
+    cursor: default;
 }
 
+/* ---------- Menu lateral (só em tela grande) ---------- */
+.desktop-nav {
+    display: none;
+}
+
+@media (min-width: 1100px) {
+    .desktop-nav {
+        display: block;
+        position: fixed;
+        top: 80px;
+        left: 24px;
+    }
+
+    .desktop-nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        gap: 8px;
+    }
+
+    .desktop-nav button {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        width: 200px;
+        padding: 12px;
+        border: 0;
+        border-radius: 8px;
+        background: none;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .desktop-nav button:hover {
+        background: #E3F0D8;
+    }
+}
+
+/* ---------- Menu de baixo (só no celular) ---------- */
 .mobile-nav {
-  
+    display: none;
 }
 
 @media (max-width: 600px) {
@@ -145,7 +265,8 @@
         gap: 10px;
     }
 
-    .post {
+    .post,
+    .stories {
         border-inline: 0;
         border-radius: 0;
     }
@@ -164,7 +285,7 @@
         right: 0;
         height: 56px;
         background: #fff;
-        border-top: 1px solid #dbdbdb;
-        z-index: 1;
+        border-top: 1px solid var(--borda);
+        z-index: 2;
     }
 }

@@ -38,3 +38,36 @@ Escolha imagens e coloque-as em `public/images`, seguindo `public/images/README.
 5. Inclua uma tela de perfil ou uma lista de stories.
 
 > Os botões são inicialmente apenas visuais. As interações fazem parte do exercício.
+
+---
+
+## Dinogram 🦖
+
+O feed do Instagram, só que de dinossauros. Cada dinossauro posta aquilo que mais queria ver:
+
+| Perfil | O que mais quer ver |
+|---|---|
+| rex.bracinhos | Os bracinhos alcançando um abraço |
+| tri.chifrudo | Um chapéu com furo para os três chifres |
+| ptero.voa | O mar lá de cima, sem ninguém pedindo carona |
+| estego.zen | O meteoro passando longe |
+
+### O que foi feito
+
+- Nova identidade: nome **Dinogram**, cores verdes, logo e favicon de pegada.
+- Imagens próprias em SVG na pasta `public/images`.
+- Posts e comentários no `src/data/posts.json`.
+- **Curtir:** o coração fica vermelho e a quantidade aumenta. Clicar de novo descurte. Duplo clique na foto também curte.
+- **Comentários:** cada post mostra os comentários e tem um campo para publicar um novo.
+- **Stories:** no topo do feed. Ao clicar, a borda fica cinza (story visto).
+- Menu embaixo no celular.
+
+### Prints
+
+![Dinogram no computador](prints/dinogram-desktop.png)
+
+![Dinogram no celular](prints/dinogram-celular.png)
+
+### Repositório
+
+Link do GitHub: (colocar aqui)
